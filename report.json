@@ -1,0 +1,142 @@
+[
+    {
+        "coin": "bitcoin",
+        "price": 76296,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:40:16"
+    },
+    {
+        "coin": "ethereum",
+        "price": 2261.19,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:40:16"
+    },
+    {
+        "coin": "uniswap",
+        "price": 3.19,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:40:17"
+    },
+    {
+        "coin": "solana",
+        "price": null,
+        "currency": "usd",
+        "status": "rate limit",
+        "requested_at": "2026-04-30 15:41:32"
+    },
+    {
+        "coin": "dogecoin",
+        "price": 0.10658,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:41:33"
+    },
+    {
+        "coin": "cardano",
+        "price": 0.245487,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:41:33"
+    },
+    {
+        "coin": "BNB",
+        "price": null,
+        "currency": "usd",
+        "status": "rate limit",
+        "requested_at": "2026-04-30 15:41:33"
+    },
+    {
+        "coin": "chainlink",
+        "price": 9.13,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:42:35"
+    },
+    {
+        "coin": "pepe",
+        "price": 3.87e-06,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:42:35"
+    },
+    {
+        "coin": "aave",
+        "price": 92.67,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:42:36"
+    },
+    {
+        "coin": "aster",
+        "price": null,
+        "currency": "usd",
+        "status": "rate limit",
+        "requested_at": "2026-04-30 15:43:11"
+    },
+    {
+        "coin": "worldcoin",
+        "price": 0.0026008,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:43:52"
+    },
+    {
+        "coin": "arbitrum",
+        "price": 0.12675,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:43:52"
+    },
+    {
+        "coin": "cosmos",
+        "price": 1.91,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:43:52"
+    },
+    {
+        "coin": "ondo",
+        "price": null,
+        "currency": "usd",
+        "status": "rate limit",
+        "requested_at": "2026-04-30 15:43:52"
+    },
+    {
+        "coin": "render",
+        "price": null,
+        "currency": "usd",
+        "status": "rate limit",
+        "requested_at": "2026-04-30 15:45:08"
+    },
+    {
+        "coin": "raydium",
+        "price": 0.759685,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:45:08"
+    },
+    {
+        "coin": "pendle",
+        "price": 1.29,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:45:09"
+    },
+    {
+        "coin": "celestia",
+        "price": 0.355308,
+        "currency": "usd",
+        "status": "ok",
+        "requested_at": "2026-04-30 15:45:09"
+    },
+    {
+        "coin": "aptos",
+        "price": null,
+        "currency": "usd",
+        "status": "rate limit",
+        "requested_at": "2026-04-30 15:45:09"
+    }
+]
