@@ -69,8 +69,9 @@ def write_report(crypto):
 
         
 async def create_parse_response(coin):
+    MAX_RETRIES = 3
     tries = 0
-    delay = int(15)
+    delay = 15
     url = "https://api.coingecko.com/api/v3/simple/price"
     params = {
         "ids": coin,
@@ -78,7 +79,7 @@ async def create_parse_response(coin):
     }
     # await asyncio.sleep(1)
     # response.raise_for_status()
-    while tries < 3:
+    while tries < MAX_RETRIES:
         response = requests.get(url, params=params)
         if response.status_code == 429:
             await asyncio.sleep(delay)
@@ -86,9 +87,8 @@ async def create_parse_response(coin):
             tries += 1
         else:
             break
-    if tries == 3:
-        data = 'status'
-        return data
+    if tries == MAX_RETRIES:
+        return None
     data = response.json()
     print(data)
     return data
@@ -108,7 +108,7 @@ async def func_sem(coin,semaphore,crypto):
     async with semaphore:
         data = await create_parse_response(coin)
         time_parse = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        if 'status' in data:
+        if data is None:
             price = None
             status = 'rate limit'
             print('coin rate limit')
@@ -124,7 +124,7 @@ async def func_sem(coin,semaphore,crypto):
 
 
 async def main():
-    semaphore = asyncio.Semaphore(2)
+    semaphore = asyncio.Semaphore(5)
     func_coins = ['bitcoin','ethereum','uniswap','solana','BNB','dogecoin','cardano','chainlink','aster','pepe','aave','ondo','worldcoin','arbitrum','cosmos','render','aptos','raydium','pendle','celestia']
     crypto = []
     tasks = []
@@ -135,4 +135,15 @@ async def main():
     write_report(crypto)
     print(crypto)
 
+
+    # 8.9/10
+
 asyncio.run(main())
+
+
+
+'''
+    1 - Доработать текущий код на 10/10
+    2 - Перейти на асинхроность полную
+    3 - задачи тг
+'''
